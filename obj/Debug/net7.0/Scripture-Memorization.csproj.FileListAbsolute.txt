@@ -1,0 +1,14 @@
+/Users/spenstar/Documents/School/programming-with-classes/scripture-memorization-project/Scripture-Memorization/bin/Debug/net7.0/Scripture-Memorization
+/Users/spenstar/Documents/School/programming-with-classes/scripture-memorization-project/Scripture-Memorization/bin/Debug/net7.0/Scripture-Memorization.deps.json
+/Users/spenstar/Documents/School/programming-with-classes/scripture-memorization-project/Scripture-Memorization/bin/Debug/net7.0/Scripture-Memorization.runtimeconfig.json
+/Users/spenstar/Documents/School/programming-with-classes/scripture-memorization-project/Scripture-Memorization/bin/Debug/net7.0/Scripture-Memorization.dll
+/Users/spenstar/Documents/School/programming-with-classes/scripture-memorization-project/Scripture-Memorization/bin/Debug/net7.0/Scripture-Memorization.pdb
+/Users/spenstar/Documents/School/programming-with-classes/scripture-memorization-project/Scripture-Memorization/obj/Debug/net7.0/Scripture-Memorization.GeneratedMSBuildEditorConfig.editorconfig
+/Users/spenstar/Documents/School/programming-with-classes/scripture-memorization-project/Scripture-Memorization/obj/Debug/net7.0/Scripture-Memorization.AssemblyInfoInputs.cache
+/Users/spenstar/Documents/School/programming-with-classes/scripture-memorization-project/Scripture-Memorization/obj/Debug/net7.0/Scripture-Memorization.AssemblyInfo.cs
+/Users/spenstar/Documents/School/programming-with-classes/scripture-memorization-project/Scripture-Memorization/obj/Debug/net7.0/Scripture-Memorization.csproj.CoreCompileInputs.cache
+/Users/spenstar/Documents/School/programming-with-classes/scripture-memorization-project/Scripture-Memorization/obj/Debug/net7.0/Scripture-Memorization.dll
+/Users/spenstar/Documents/School/programming-with-classes/scripture-memorization-project/Scripture-Memorization/obj/Debug/net7.0/refint/Scripture-Memorization.dll
+/Users/spenstar/Documents/School/programming-with-classes/scripture-memorization-project/Scripture-Memorization/obj/Debug/net7.0/Scripture-Memorization.pdb
+/Users/spenstar/Documents/School/programming-with-classes/scripture-memorization-project/Scripture-Memorization/obj/Debug/net7.0/Scripture-Memorization.genruntimeconfig.cache
+/Users/spenstar/Documents/School/programming-with-classes/scripture-memorization-project/Scripture-Memorization/obj/Debug/net7.0/ref/Scripture-Memorization.dll
