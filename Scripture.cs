@@ -1,13 +1,27 @@
 namespace ScriptureMemorization
 {
+    public class Word
+    {
+        public string Reference { get; set; }
+        public int VerseNumber { get; set; }
+        public string Content { get; set; }
+
+        public Word(string reference, int verseNumber, string content)
+        {
+            Reference = reference;
+            VerseNumber = verseNumber;
+            Content = content;
+        }
+    }
+
     public class Scripture
     {
         // Properties
         public string Book { get; }
-        public int Chapter { get;}
+        public int Chapter { get; }
         public int StartingVerse { get; }
         public int EndingVerse { get; }
-        public string Content { get; set;}
+        public string Content { get; set; }
         public List<string> Words { get; set; }
 
         private static Random random = new Random();
@@ -24,11 +38,6 @@ namespace ScriptureMemorization
             Content = content;
             Words = content.Split(' ').ToList();
 
-            RedactedWords = new Dictionary<string, bool>();
-            foreach (var word in Words)
-            {
-                RedactedWords[word] = false;
-            }
         }
 
         public string ScriptureHeading()
@@ -47,7 +56,7 @@ namespace ScriptureMemorization
 
 
         // Method to return formatted Scripture
-        public string FormatContent()
+        public List<Word> FormatContent()
         {
             // Update Content based on the Words list.
             Content = string.Join(" ", Words);
@@ -55,8 +64,8 @@ namespace ScriptureMemorization
             // Split the Content string into individual verses based on your separator.
             string[] verses = Content.Split('|');
 
-            // Initialize an empty StringBuilder to hold the formatted content.
-            System.Text.StringBuilder formattedContent = new System.Text.StringBuilder();
+            // Initialize a list to hold Word objects.
+            List<Word> formattedContent = new List<Word>();
 
             // Loop through the verses and append verse numbers.
             for (int i = 0; i < verses.Length; i++)
@@ -64,12 +73,22 @@ namespace ScriptureMemorization
                 // Calculate the current verse number based on StartingVerse.
                 int currentVerseNumber = StartingVerse + i;
 
-                // Append the verse number and the verse content to the StringBuilder.
-                formattedContent.AppendLine($"{currentVerseNumber} {verses[i].Trim()}");
+                // Get the reference for the current verse.
+                string reference = $"{Book} {Chapter}:{currentVerseNumber}";
+
+                // Split each verse into words.
+                string[] wordsInVerse = verses[i].Trim().Split(' ');
+
+                // Create a Word object for each word and add it to the list.
+                foreach (string word in wordsInVerse)
+                {
+                    formattedContent.Add(new Word(reference, currentVerseNumber, word));
+                }
             }
 
-            return formattedContent.ToString();
+            return formattedContent;
         }
+
 
 
     }
